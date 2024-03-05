@@ -1,0 +1,1183 @@
+* {
+    background-color: rgb(0, 0, 0);
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*////////////////////////////// Laptop //////////////////////////////*/
+
+@media (width > 775px) {
+
+    /*////////// Header //////////*/
+    #mainHeader {
+        display: flex;
+        margin-top: 40px;
+        margin-left: 60px;
+        margin-bottom: 55px;
+        font-size: 40px;
+        color: orange;
+        font-family: "Press Start 2P", system-ui;
+        font-weight: normal;
+        font-style: normal;
+    }
+    /*//////////////////////////////*/
+
+    /*////////// Skills section //////////*/
+    #skills_container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #skillsHeader {
+        color: palegoldenrod;
+        font-family: "Press Start 2P", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: normal;
+        font-style: normal;
+        text-align: center;
+        font-size: 20px;
+        margin-top: 20px;
+    }
+
+    #skillsImage {
+        margin-top: 10px;
+        width: 600px;
+        max-width: 100%; /* Ensure the image doesn't exceed its container width */
+        max-height: 100%; /* Ensure the image doesn't exceed its container height */
+    }
+    /*//////////////////////////////*/
+
+    /*////////// Projects section //////////*/
+    #projectsHeader {
+        color: palegoldenrod;
+        font-family: "Press Start 2P", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: normal;
+        font-style: normal;
+        text-align: center;
+        font-size: 20px;
+        margin-top: 30px;
+    }
+
+    #projectsDescription {
+        color: orange;
+        text-align: center;
+        font-family: "Anta", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 22px;
+        margin-top: 30px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    #sidenote {
+        margin-left: 20px;
+        margin-right: 20px;
+        color: rgb(255,91,0);
+        text-align: center;
+        font-family: "Anta", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 20px;
+    }
+    /*//////////////////////////////*/
+
+    /*////////// Programming and github icons //////////*/
+    #clock_html, #ttt_html {
+        margin-left: 15px;
+        margin-right: 7px;
+        font-size: 35px;
+    }
+
+    #calclock_html {
+        margin-left: 40px;
+        margin-right: 8px;
+        font-size: 35px;
+    }
+
+    #calculator_html {
+        margin-right: 8px;
+        font-size: 35px;
+    }
+
+    #clock_css, #calclock_css, #calculator_css, #ttt_css {
+        margin-right: 8px;
+        font-size: 35px;
+    }
+
+    #clock_js, #calclock_js, #calculator_js, #ttt_js  {
+        font-size: 30px;
+    }
+
+    #clock_github, #ttt_github {
+        color: white;
+        font-size: 25px;
+        margin-left: 15px;
+        margin-top: 12px;
+    }
+
+    #calculator_github {
+        color: white;
+        font-size: 25px;
+        margin-top: 12px;
+    }
+
+    #calclock_github {
+        color: white;
+        font-size: 25px;
+        margin-top: 12px;
+        margin-left: 40px;
+    }
+
+    .icons {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #clock_github:hover, #calclock_github:hover, #calculator_github:hover, #ttt_github:hover {
+        color: gray;
+    }
+    /*//////////////////////////////*/
+
+    #clock_box, #calclock_box, #calculator_box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*////////// Analog clock //////////*/
+    #clock_header_container {
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+    }
+
+    #clockHeader {
+        color: palegoldenrod;
+        font-family: "Press Start 2P", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: normal;
+        font-style: normal;
+        font-size: 20px;
+        margin-left: 70px;
+        margin-top: 40px;
+    }
+
+    #clock_container {
+        display: flex;
+        align-items: center;
+    }
+
+    #clockImage {
+        margin-left: 20px;
+        width: 250px; 
+    }
+
+    #clockDescription {
+        color: orange;
+        font-family: "Anta", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 20px;
+        margin-left: 15px; 
+        margin-top: 10px;
+    }
+    /*//////////////////////////////*/
+
+    /*////////// Calendar and Clock //////////*/
+    #calclock_header_container {
+        display: flex;
+        align-items: center; 
+        justify-content: center;
+    }
+
+    #calclockHeader {
+        color: palegoldenrod;
+        font-family: "Press Start 2P", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: normal;
+        font-style: normal;
+        font-size: 20px;
+        margin-left: 90px;
+        margin-top: 40px;
+    }
+
+    #calclock_main_container {
+        display: flex;
+        align-items: center;
+    }
+
+    #calclock_container {
+        margin-left: 20px;
+        display: flex;
+        gap: 10px;
+        align-items: center; 
+    }
+
+    #calclockDescription {
+        color: orange;
+        font-family: "Anta", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 20px;
+        margin-top: 50px;
+        margin-left: 40px; 
+        margin-right: 20px;
+    }
+
+    /*////////// Calendar and Clock styling //////////*/
+    .clock {
+        border: 4px solid #606060;
+        color: orange;
+        padding: 20px;
+        font-family: clockfont;
+        border-radius: 20px;
+        background-color: black;
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+    }
+
+    .calendar {
+        border: 4px solid #606060;
+        color: rgb(255, 222, 6);
+        padding: 18px;
+        font-family: "Anta";
+        font-size: 18px;
+        border-radius: 20px;
+        background-color: black;
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+    }
+
+    .clock ul,
+    .calendar ul {
+        list-style: none; /* removes the bullet points in the ul list */
+        display: flex;
+        font-size: 40px;
+        gap: 2px;
+    }
+
+    #date, #year, #day, #month {
+        text-align: center;
+    }
+
+    @font-face {
+        font-family: clockfont;
+        src: url(fonts/customized.TTF) format('truetype');
+    }
+    /*//////////////////////////////*/
+
+    /*////////// Calculator //////////*/
+    #calculator_header_container {
+        display: flex;
+        align-items: center; 
+        justify-content: center;
+    }
+
+    #calculatorHeader {
+        color: palegoldenrod;
+        font-family: "Press Start 2P", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: normal;
+        font-style: normal;
+        font-size: 20px;
+        margin-left: 70px;
+        margin-top: 40px;
+    }
+
+    #calculator_container {
+        display: flex;
+        align-items: center;
+    }
+
+    #calculatorImage {
+        margin-top: 20px;
+        width: 280px; 
+    }
+
+    #calculatorDescription {
+        color: orange;
+        font-family: "Anta", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 20px;
+    }
+
+    /*//////////////////////////////*/
+
+    /*////////// Tic Tac Toe //////////*/
+    #ttt_header_container {
+        display: flex;
+        align-items: center; 
+        justify-content: center;
+    }
+
+    #tttHeader {
+        color: palegoldenrod;
+        font-family: "Press Start 2P", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: normal;
+        font-style: normal;
+        font-size: 20px;
+        margin-left: 65px;
+        margin-top: 40px;
+    }
+
+    #ttt_container {
+        display: flex;
+        align-items: center;
+    }
+
+    #tttImage {
+        width: 250px; 
+    }
+
+    #tttDescription {
+        color: orange;
+        font-family: "Anta", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 20px;
+        margin-left: 15px; 
+    }
+
+    /*//////////////////////////////*/
+
+    /*////////// Footer //////////*/
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #line {
+        color: orangered;
+        font-size: 40px;
+    }
+
+    #footer_message {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        color: orange;
+        padding: 15px;
+        font-family: "Anta";
+        font-size: 25px;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+    }
+
+    #imageIcon {
+        width: 70px;
+        height: 60px;
+    }
+
+    #main_github {
+        margin-right: 8px;
+        color: white;
+        font-size: 30px;
+    }
+
+    #main_github:hover {
+        color: gray;
+    }
+
+    #main_linkedin {
+        margin-left: 10px;
+        color: #0077b5;
+        font-size: 30px;
+    }
+
+    #main_linkedin:hover {
+        color: #87CEEB;
+    }
+    /*//////////////////////////////*/
+}
+
+/*////////////////////////////// Tablet //////////////////////////////*/
+
+@media (min-width: 501px) and (max-width: 775px)  {
+
+    /*////////// Header //////////*/
+    #mainHeader {
+        display: flex;
+        margin-top: 30px;
+        margin-left: 40px;
+        margin-bottom: 55px;
+        font-size: 25px;
+        color: orange;
+        font-family: "Press Start 2P", system-ui;
+        font-weight: normal;
+        font-style: normal;
+    }
+    /*//////////////////////////////*/
+
+    /*////////// Skills section //////////*/
+    #skills_container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #skillsHeader {
+        color: palegoldenrod;
+        font-family: "Press Start 2P", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: normal;
+        font-style: normal;
+        text-align: center;
+        font-size: 20px;
+        margin-top: 20px;
+    }
+
+    #skillsImage {
+        margin-top: 10px;
+        width: 500px;
+        max-width: 100%; 
+        max-height: 100%; 
+    }
+    /*//////////////////////////////*/
+
+    /*////////// Projects section //////////*/
+    #projectsHeader {
+        color: palegoldenrod;
+        font-family: "Press Start 2P", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: normal;
+        font-style: normal;
+        text-align: center;
+        font-size: 20px;
+        margin-top: 30px;
+    }
+
+    #projectsDescription {
+        color: orange;
+        text-align: center;
+        font-family: "Anta", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 17px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 30px;
+    }
+
+    #sidenote {
+        margin-left: 20px;
+        margin-right: 20px;
+        color: rgb(255,91,0);
+        text-align: center;
+        font-family: "Anta", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 17px;
+    }
+    /*//////////////////////////////*/
+
+    /*////////// Programming and github icons //////////*/
+    #clock_html, #ttt_html {
+        margin-left: 15px;
+        margin-right: 7px;
+        font-size: 30px;
+    }
+
+    #calclock_html {
+        margin-left: 40px;
+        margin-right: 8px;
+        font-size: 30px;
+    }
+
+    #calculator_html {
+        margin-right: 8px;
+        font-size: 30px;
+    }
+
+    #clock_css, #calclock_css, #calculator_css, #ttt_css {
+        margin-right: 8px;
+        font-size: 30px;
+    }
+
+    #clock_js, #calclock_js, #calculator_js, #ttt_js  {
+        font-size: 28px;
+    }
+
+    #clock_github, #ttt_github {
+        color: white;
+        font-size: 22px;
+        margin-left: 15px;
+        margin-top: 12px;
+    }
+
+    #calculator_github {
+        color: white;
+        font-size: 22px;
+        margin-top: 12px;
+    }
+
+    #calclock_github {
+        color: white;
+        font-size: 22px;
+        margin-top: 12px;
+        margin-left: 40px;
+    }
+
+    .icons {
+        display: flex;
+        flex-direction: row;
+    }
+    /*//////////////////////////////*/
+
+    #clock_box, #calclock_box, #calculator_box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*////////// Analog clock //////////*/
+    #clock_header_container {
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+    }
+
+    #clockHeader {
+        color: palegoldenrod;
+        font-family: "Press Start 2P", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: normal;
+        font-style: normal;
+        font-size: 18px;
+        margin-left: 70px;
+        margin-top: 40px;
+    }
+
+    #clock_container {
+        display: flex;
+        align-items: center;
+    }
+
+    #clockImage {
+        margin-left: 20px;
+        width: 190px; 
+    }
+
+    #clockDescription {
+        color: orange;
+        font-family: "Anta", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 17px;
+        margin-left: 15px; 
+        margin-top: 10px;
+    }
+    /*//////////////////////////////*/
+
+    /*////////// Calendar and Clock //////////*/
+    #calclock_header_container {
+        display: flex;
+        align-items: center; 
+        justify-content: center;
+    }
+
+    #calclockHeader {
+        color: palegoldenrod;
+        font-family: "Press Start 2P", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: normal;
+        font-style: normal;
+        font-size: 18px;
+        margin-top: 40px;
+    }
+
+    #calclock_main_container {
+        display: flex;
+        align-items: center;
+    }
+
+    #calclock_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 20px;
+        display: flex;
+        gap: 10px;
+        align-items: center; 
+    }
+
+    #calclockDescription {
+        color: orange;
+        font-family: "Anta", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 17px;
+        margin-top: 50px;
+        margin-left: 40px; 
+        margin-right: 20px;
+    }
+
+    /*////////// Calendar and Clock styling //////////*/
+    .clock {
+        margin-left: 20px;
+        margin-top: 30px;
+        border: 4px solid #606060;
+        color: orange;
+        padding: 20px;
+        font-family: clockfont;
+        border-radius: 20px;
+        background-color: black;
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+    }
+
+    .calendar {
+        margin-left: 20px;
+        border: 4px solid #606060;
+        color: rgb(255, 222, 6);
+        padding: 18px;
+        font-family: "Anta";
+        font-size: 16px;
+        border-radius: 20px;
+        background-color: black;
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+    }
+
+    .clock ul,
+    .calendar ul {
+        list-style: none; /* removes the bullet points in the ul list */
+        display: flex;
+        font-size: 35px;
+        gap: 2px;
+    }
+
+    #date, #year, #day, #month {
+        text-align: center;
+    }
+
+    @font-face {
+        font-family: clockfont;
+        src: url(fonts/customized.TTF) format('truetype');
+    }
+    /*//////////////////////////////*/
+
+    /*////////// Calculator //////////*/
+    #calculator_header_container {
+        display: flex;
+        align-items: center; 
+        justify-content: center;
+    }
+
+    #calculatorHeader {
+        color: palegoldenrod;
+        font-family: "Press Start 2P", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: normal;
+        font-style: normal;
+        font-size: 18px;
+        margin-left: 70px;
+        margin-top: 40px;
+    }
+
+    #calculator_container {
+        display: flex;
+        align-items: center;
+    }
+
+    #calculatorImage {
+        margin-top: 30px;
+        width: 230px; 
+    }
+
+    #calculatorDescription {
+        margin-right: 20px;
+        margin-top: 20px;
+        color: orange;
+        font-family: "Anta", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 17px;
+    }
+    /*//////////////////////////////*/
+
+    /*////////// Tic Tac Toe //////////*/
+    #ttt_header_container {
+        display: flex;
+        align-items: center; 
+        justify-content: center;
+    }
+
+    #tttHeader {
+        color: palegoldenrod;
+        font-family: "Press Start 2P", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: normal;
+        font-style: normal;
+        font-size: 18px;
+        margin-left: 65px;
+        margin-top: 40px;
+    }
+
+    #ttt_container {
+        display: flex;
+        align-items: center;
+    }
+
+    #tttImage {
+        width: 210px; 
+    }
+
+    #tttDescription {
+        margin-top: 30px;
+        color: orange;
+        font-family: "Anta", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 17px;
+        margin-left: 15px; 
+    }
+
+    /*//////////////////////////////*/
+
+    /*////////// Footer //////////*/
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #line {
+        color: orangered;
+        font-size: 40px;
+    }
+
+    #footer_message {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        color: orange;
+        padding: 15px;
+        font-family: "Anta";
+        font-size: 20px;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+    }
+
+    #imageIcon {
+        width: 60px;
+        height: 50px;
+    }
+
+    #main_github {
+        margin-right: 8px;
+        color: white;
+        font-size: 27px;
+    }
+
+    #main_linkedin {
+        margin-left: 10px;
+        color: #0077b5;
+        font-size: 27px;
+    }
+    /*//////////////////////////////*/
+}
+
+/*////////////////////////////// Mobile phone //////////////////////////////*/
+
+@media (width < 500px) {
+
+    /*////////// Header //////////*/
+    #mainHeader {
+        margin-top: 30px;
+        margin-left: 20px;
+        display: flex;
+        font-size: 20px;
+        color: orange;
+        font-family: "Press Start 2P", system-ui;
+        font-weight: normal;
+        font-style: normal;
+    }
+    /*//////////////////////////////*/
+
+    /*////////// Skills section //////////*/
+    #skills_container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #skillsHeader {
+        color: palegoldenrod;
+        font-family: "Press Start 2P", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: normal;
+        font-style: normal;
+        text-align: center;
+        font-size: 15px;
+        margin-top: 40px;
+    }
+
+    #skillsImage {
+        margin-top: 10px;
+        width: 380px;
+        max-width: 100%; 
+        max-height: 100%;
+    }
+    /*//////////////////////////////*/
+
+    /*////////// Projects section //////////*/
+    #projectsHeader {
+        color: palegoldenrod;
+        font-family: "Press Start 2P", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: normal;
+        font-style: normal;
+        text-align: center;
+        font-size: 15px;
+        margin-top: 30px;
+    }
+
+    #projectsDescription {
+        color: orange;
+        text-align: center;
+        font-family: "Anta", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        margin-top: 30px;
+        margin-left: 15px;
+        margin-right: 15px;
+        font-size: 14px;
+    }
+
+    #sidenote {
+        color: rgb(255,91,0);
+        text-align: center;
+        font-family: "Anta", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        margin-left: 15px;
+        margin-right: 15px;
+        font-size: 14px;
+    }
+    /*//////////////////////////////*/
+
+     /*////////// Programming and github icons //////////*/
+    #clock_html, #ttt_html {
+        margin-left: 15px;
+        margin-right: 7px;
+        font-size: 25px;
+    }
+
+    #calclock_html {
+        margin-left: 25px;
+        margin-right: 8px;
+        font-size: 25px;
+    }
+
+    #calculator_html {
+        margin-right: 8px;
+        font-size: 25px;
+    }
+
+    #clock_css, #calclock_css, #calculator_css, #ttt_css {
+        margin-right: 8px;
+        font-size: 25px;
+    }
+
+    #clock_js, #calclock_js, #calculator_js, #ttt_js  {
+        font-size: 21px;
+    }
+
+    #clock_github, #ttt_github {
+        color: white;
+        font-size: 20px;
+        margin-left: 15px;
+        margin-top: 12px;
+    }
+
+    #calculator_github {
+        color: white;
+        font-size: 20px;
+        margin-top: 12px;
+    }
+
+    #calclock_github {
+        color: white;
+        font-size: 20px;
+        margin-top: 12px;
+        margin-left: 25px;
+    }
+    
+    .icons {
+        display: flex;
+        flex-direction: row;
+    }
+    /*//////////////////////////////*/
+    
+    #clock_box, #calclock_box, #calculator_box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*////////// Analog clock //////////*/
+    #clock_header_container {
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+    }
+    
+    #clockHeader {
+        color: palegoldenrod;
+        font-family: "Press Start 2P", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: normal;
+        font-style: normal;
+        font-size: 13px;
+        margin-left: 70px;
+        margin-top: 40px;
+    }
+
+    #clock_container {
+        display: flex;
+        align-items: center;
+    }
+
+    #clockImage {
+        margin-left: 20px;
+        width: 140px;
+    }
+
+    #clockDescription {
+        display: flex;
+        color: orange;
+        font-family: "Anta", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        margin-top: 30px;
+        margin-right: 20px;
+        margin-left: 15px; 
+        font-size: 15px;
+    }
+    /*//////////////////////////////*/
+
+    /*////////// Calendar and Clock //////////*/
+    #calclock_header_container {
+        display: flex;
+        align-items: center; 
+        justify-content: center;
+    }
+    
+    #calclockHeader {
+        margin-left: 20px;
+        margin-top: 40px;
+        display: flex;
+        font-size: 13px;
+        color: palegoldenrod;
+        font-family: "Press Start 2P", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    #calclock_main_container {
+        display: flex;
+        align-items: center;
+    }
+    
+    #calclock_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 20px;
+        gap: 10px;
+    }
+
+    #calclockDescription {
+        color: orange;
+        font-family: "Anta", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        margin-top: 30px;
+        margin-left: 25px; 
+        margin-right: 20px;
+        font-size: 15px;
+    }
+
+    /*////////// Calendar and Clock styling //////////*/
+    .clock {
+        border: 3px solid #606060;
+        color: orange;
+        font-family: clockfont;
+        margin-left: 12px;
+        border-radius: 15px;
+        padding: 12px;
+        background-color: black;
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+    }
+    
+    .calendar {
+        border: 3px solid #606060;
+        color: rgb(255, 222, 6);
+        font-family: "Anta";
+        margin-left: 12px;
+        border-radius: 15px;
+        padding: 13px;
+        font-size: 13px;
+        background-color: black;
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+    }
+    
+    .clock ul,
+    .calendar ul {
+        list-style: none; 
+        display: flex;
+        font-size: 30px;
+        gap: 2px;
+    }
+
+    #date, #year, #day, #month {
+        text-align: center;
+    }
+
+    @font-face {
+        font-family: clockfont;
+        src: url(fonts/customized.TTF) format('truetype');
+    }
+    /*//////////////////////////////*/
+
+    /*////////// Calculator //////////*/
+    #calculator_header_container {
+        display: flex;
+        align-items: center; 
+        justify-content: center;
+    }
+
+    #calculatorHeader {
+        color: palegoldenrod;
+        font-family: "Press Start 2P", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: normal;
+        font-style: normal;
+        font-size: 14px;
+        margin-left: 20px;
+        margin-top: 40px;
+    }
+
+    #calculator_container {
+        display: flex;
+        align-items: center;
+    }
+
+    #calculatorImage {
+        width: 183px;
+    }
+
+    #calculatorDescription {
+        margin-top: 30px;
+        margin-right: 20px;
+        font-size: 15px;
+        color: orange;
+        font-family: "Anta", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+    /*//////////////////////////////*/
+
+    /*////////// Tic Tac Toe //////////*/
+    #ttt_header_container {
+        display: flex;
+        align-items: center; 
+        justify-content: center;
+    }
+
+    #tttHeader {
+        color: palegoldenrod;
+        font-family: "Press Start 2P", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: normal;
+        font-style: normal;
+        font-size: 14px;
+        margin-left: 20px;
+        margin-top: 40px;
+    }
+
+    #ttt_container {
+        display: flex;
+        align-items: center;
+    }
+
+    #tttImage {
+        margin-left: 12px;
+        margin-top: 20px;
+        width: 140px;
+    }
+
+    #tttDescription {
+        color: orange;
+        font-family: "Anta", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        margin-left: 14px; 
+        margin-top: 30px;
+        margin-right: 20px;
+        font-size: 15px;
+    }
+    /*//////////////////////////////*/
+
+    /*////////// Footer //////////*/
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #line {
+        color: orangered;
+        font-size: 25px;
+    }
+
+    #footer_message {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        margin-right: 15px;
+        color: orange;
+        font-family: "Anta";
+        font-size: 15px;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+    }
+
+    #imageIcon {
+        width: 50px;
+        height: 40px;
+    }
+
+    #main_github {
+        margin-right: 8px;
+        color: white;
+        font-size: 25px;
+    }
+
+    #main_linkedin {
+        color: #0077b5;
+        margin-left: 5px;
+        font-size: 25px;
+    }
+}
+/*//////////////////////////////*/
+
